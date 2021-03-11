@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validation Document</title>
-    <script href="./index.js" type="script/text"></script>
+<!--<script type="text/javascript" src="index.js"></script>-->
 </head>
 <body>
     <h1>This is a validation Form</h1>
@@ -13,14 +13,16 @@
     <form action="" method ="POST">
 <label for ="text">Input</label>
 <input id="enterText" name ="enterText" type="text" required maxlength="250">
-<br><br>
+<br>
+<br>
 <div class="form-group">
   <label for="">Output</label>
-  <textarea class="form-control" name="Output" id="Output" rows="4"></textarea>
+  <input class="form-control" name="Output" id="Output" rows="4">
 
 </div>    
-<br><br>
-<input type="submit" value= "submit" id="button">
+<br>
+<br>
+<button type="submit" value= "submit" id="button" onclick="inputdesiredText()">Click to Add</button>
 
 </form>
 </section>
@@ -41,6 +43,17 @@
 <textarea class="form-control" name="Output" id="result" rows="1"></textarea>
 
 </form>
+<script>
+    let inputText = document.getElementById("enterText").value;
+        //let outputText = document.getElementById("output").value;
+
+        //button.onclick = inputdesiredText();
+        function inputdesiredText() {
+            document.getElementById("output").value = inputText;
+            document.getElementById("enterText") = '';
+        };
+
+</script>
     
 </body>
 </html>
