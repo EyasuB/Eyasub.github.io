@@ -10,14 +10,14 @@
 
 <body>
 
-    <li><a href="index.html">Back to Home Page</a></li>
+    <li><a href="index.html">Home Page</a></li>
 
     <br />
     <p>First Value</p>
-    <input type="text" id="n1" /><br /><br />
+    <input type="text" id="number-one" /><br /><br />
 
     <p>Second Value</p>
-    <input type="text" id="n2" /><br /><br />
+    <input type="text" id="number-two" /><br /><br />
 
     <span> Operations: </span>
 
@@ -28,7 +28,7 @@
     <br />
 
     <h4> Result: </h4>
-    <input type="text" id="result" />
+    <input type="text" id="Calc-result" />
 
     <br />
 
@@ -38,29 +38,29 @@
     <script>
 
         function calcM() {
-            var n1 = parseFloat(document.getElementById('n1').value);
-            var n2 = parseFloat(document.getElementById('n2').value);
+            var num1 = parseFloat(document.getElementById("number-one").value);
+            var num2 = parseFloat(document.getElementById("number-two").value);
 
             {
-                document.getElementById('result').value = n1 - n2;
+                document.getElementById('Calc-result').value = num1 - num2;
             }
 
         }
         function calcMu() {
-            var n1 = parseFloat(document.getElementById('n1').value);
-            var n2 = parseFloat(document.getElementById('n2').value);
+            var n1 = parseFloat(document.getElementById('number-one').value);
+            var n2 = parseFloat(document.getElementById("number-two").value);
 
             {
-                document.getElementById('result').value = n1 * n2;
+                document.getElementById('Calc-result').value = num1 * num2;
             }
 
         }
         function calcA() {
-            var n1 = parseFloat(document.getElementById('n1').value);
-            var n2 = parseFloat(document.getElementById('n2').value);
+            var n1 = parseFloat(document.getElementById('number-one').value);
+            var n2 = parseFloat(document.getElementById("number-two").value);
 
             {
-                document.getElementById('result').value = n1 + n2;
+                document.getElementById('Calc-result').value = num1 + num2;
             }
 
         }
