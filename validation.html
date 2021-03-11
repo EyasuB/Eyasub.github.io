@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<----<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -27,30 +27,19 @@
 </form>
 </section>
 <br><br>
-<form>
-    <label for="number">First Value:</label>
-    <br>
-    <input id="num1" name ="num1"type="number" required>
-    <br><br>
-<lable for ="number"><span>Second Value:</span></lable>
-<br>
-<input id="num2" name="num2" type="number"required>
-<br><br>
-<button id ="button">+</button><span></span><button id="button">-</button><button id="button">x</button>
-<br><br>
-<label for="">Output</label>
-<br>
-<textarea class="form-control" name="Output" id="result" rows="1"></textarea>
 
-</form>
 <script>
-    let inputText = document.getElementById("enterText").value;
+    
         //let outputText = document.getElementById("output").value;
 
         //button.onclick = inputdesiredText();
         function inputdesiredText() {
+
+            let inputText = document.getElementById("enterText").value;
+            {
             document.getElementById("output").value = inputText;
-            document.getElementById("enterText") = '';
+            document.getElementById("enterText").value = '';
+            }
         };
 
 </script>
